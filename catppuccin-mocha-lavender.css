@@ -1,0 +1,153 @@
+/* Personal Dark Mode Weirdness Fixes */
+
+/* Personal Preferences
+1. Higher contrast
+2. Whiter text
+3. Not necessarily a straight up black background
+4. Remove weird padding and stylistic changes from lightmode
+5. Green text for links on dark mode look hideous
+6. Don't dim my flag or banner */
+
+:root {
+  --background-color: #1e1e2e;
+  --text-color: #cdd6f4;
+  --link-color: #b4befe;
+  --link-hover-color: #68c16f;
+  --font-family: "Inter", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body,
+#content {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+#main,
+#banner {
+  background: var(--background-color) none;
+}
+
+#panel,
+#panel .menu a,
+#panel ul,
+.officerbar {
+  background: var(--background-color) !important;
+  color: var(--text-color);
+}
+
+.newflagbox img,
+img.bigflag,
+img.smallflag,
+img.miniflag {
+  filter: none;
+}
+
+#nationcover {
+  filter: none;
+}
+
+h1,
+h1 a,
+h2,
+h4 {
+  color: #edecee !important;
+  text-shadow: none;
+}
+
+a:link,
+a:visited {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.25s ease-out;
+}
+
+.deckcard-season-1 .nameblock a:link,
+.deckcard-season-1 a:visited {
+  color: green !important;
+  text-decoration: none;
+  transition: color 0.25s ease-out;
+}
+
+a:link:hover,
+a:visited:hover {
+  text-decoration: underline;
+}
+
+#panel ul.menu a,
+#banner .bel,
+#panel li i,
+#banner .bel .bellink i {
+  color: var(--text-color);
+  text-shadow: none;
+}
+
+#panel li i,
+#panel ul.popoutmenu li i {
+  color: #bac2de;
+  text-shadow: none;
+}
+
+#panel ul.popoutmenu li a {
+  color: var(--text-color);
+  padding: 6px 0;
+}
+
+a.rlink {
+  color: #b4befe;
+}
+
+.threads a,
+#trophyselectors i {
+  color: #a6adc8 !important;
+}
+
+.newrinfbubble .newmainlinebubblebottom,
+.newmyregionbubble .newmainlinebubblebottom,
+.newmainlinebubbletop {
+  color: var(--text-color);
+  text-shadow: none;
+}
+
+.newmainlinebubblebottom {
+    text-shadow: none;
+}
+
+* {
+  font-family: var(--font-family) !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Keep the flag centered with the panel */
+.bannernation2 a.bellink {
+  padding: 0 22px !important;
+}
+
+/* Make the table background match the rest of the page */
+.auctionslisttable,
+.auctionstopcardstable,
+.auctiontradestable,
+.auctionsrecenttradestable,
+.auctionstopdeckstable,
+.deckscollectionstable,
+#cardauctiontable {
+  background-color: var(--background-color);
+}
+
+#cardauctiontable td.auction-self-matched {
+  background-color: rgb(63 63 70) !important;
+}
+
+.cardauctionmatchedrow {
+  background-color: #313244 !important;
+}
+
+#cardauctiontable th {
+  background-color: #45475a !important;
+}
+
+.deckcard-filters .deckcard-token.selected {
+    border: 3px solid #fff;
+}
