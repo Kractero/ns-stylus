@@ -18,7 +18,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-html, body, ul.forums, .forabg, .forumbg, .navbar, #nsbanner {
+html, body, ul.forums, .forabg, .forumbg, .navbar, #nsbanner, .bg1, .bg2, .bg3, fieldset.jumpbox {
     background: var(--background-color) !important;
 }
 
@@ -153,10 +153,10 @@ a:visited:hover {
     border: 3px solid #fff;
 }
 
-legend, fieldset, .even {
+.even, blockquote {
     background: #45475a!important;
 }
 
-div.dispatchlist, .odd {
-    background: #313244;
+legend, fieldset, div.dispatchlist, .odd, ul.factbooklist, div.dispatch, .newrinfbubble .newmainlinebubblebottom, .newmyregionbubble .newmainlinebubblebottom, .newmainlinebubbletop, div.nationsummarybox, .policybox, .inner, .topic-actions {
+    background: #313244 !important;
 }
