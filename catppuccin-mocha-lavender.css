@@ -62,7 +62,7 @@ h4 {
 
 a:link,
 a:visited,
-.dispatchbreadcrumbs a:link, .dispatchbreadcrumbs a:visited, fieldset.wfe .dispatchauthorline a:link, fieldset.wfe .dispatchauthorline a:visited {
+.dispatchbreadcrumbs a:link, .dispatchbreadcrumbs a:visited, fieldset.wfe .dispatchauthorline a:link, fieldset.wfe .dispatchauthorline a:visited, a.rlink {
   color: var(--link-color);
   text-decoration: none;
   transition: color 0.25s ease-out;
@@ -97,10 +97,6 @@ a:visited:hover {
 #panel ul.popoutmenu li a {
   color: var(--text-color);
   padding: 6px 0;
-}
-
-a.rlink {
-  color: #b4befe;
 }
 
 .threads a,
