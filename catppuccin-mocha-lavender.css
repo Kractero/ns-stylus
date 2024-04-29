@@ -18,6 +18,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+html, body, ul.forums, .forabg, .forumbg, .navbar, #nsbanner {
+    background: var(--background-color) !important;
+}
+
 body,
 #content {
   background: var(--background-color);
@@ -57,7 +61,8 @@ h4 {
 }
 
 a:link,
-a:visited {
+a:visited,
+.dispatchbreadcrumbs a:link, .dispatchbreadcrumbs a:visited, fieldset.wfe .dispatchauthorline a:link, fieldset.wfe .dispatchauthorline a:visited {
   color: var(--link-color);
   text-decoration: none;
   transition: color 0.25s ease-out;
@@ -150,4 +155,12 @@ a.rlink {
 
 .deckcard-filters .deckcard-token.selected {
     border: 3px solid #fff;
+}
+
+legend, fieldset, .even {
+    background: #45475a!important;
+}
+
+div.dispatchlist, .odd {
+    background: #313244;
 }
