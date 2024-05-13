@@ -11,12 +11,12 @@
 :root {
   --background-color: #1e1e2e;
   --text-color: #cdd6f4;
-  --link-color: #b4befe;
+  --link-color: #94e2d5;
   --link-hover-color: #68c16f;
-  --font-family: "Inter", sans-serif;
+  --font-family: "Noto Sans", sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 html, body, ul.forums, .forabg, .forumbg, .navbar, #nsbanner, .bg1, .bg2, .bg3, fieldset.jumpbox {
     background: var(--background-color) !important;
@@ -68,7 +68,11 @@ a:visited,
   transition: color 0.25s ease-out;
 }
 
-.deckcard-season-1 .nameblock a:link,
+.deckcard-season-1 {
+    overflow: hidden;
+}
+
+.deckcard-season-1 .nameblock .ntype, .deckcard-season-1 .nameblock .nname,
 .deckcard-season-1 a:visited {
   color: green !important;
   text-decoration: none;
