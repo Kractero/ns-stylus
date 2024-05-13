@@ -157,7 +157,7 @@ a:visited:hover {
     border: 3px solid #fff;
 }
 
-.even, blockquote {
+.even {
     background: #45475a!important;
 }
 
