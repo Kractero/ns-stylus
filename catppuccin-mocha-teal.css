@@ -1,5 +1,4 @@
 /* Personal Dark Mode Weirdness Fixes */
-
 /* Personal Preferences
 1. Higher contrast
 2. Whiter text
@@ -7,127 +6,180 @@
 4. Remove weird padding and stylistic changes from lightmode
 5. Green text for links on dark mode look hideous
 6. Don't dim my flag or banner */
-
 :root {
-  --background-color: #1e1e2e;
-  --text-color: #cdd6f4;
-  --link-color: #94e2d5;
-  --link-hover-color: #68c16f;
-  --font-family: "Noto Sans", sans-serif;
+    --background-color: #1e1e2e;
+    --secondary-background-color: #181825;
+    --tertiary-background-color: #11111b;
+    --text-color: #cdd6f4;
+    --link-color: #94e2d5;
+    --link-hover-color: #68c16f;
+    --font-family: "Noto Sans", sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
-html, body, ul.forums, .forabg, .forumbg, .navbar, #nsbanner, .bg1, .bg2, .bg3, fieldset.jumpbox {
+html,
+body,
+#content,
+ul.forums,
+.forabg,
+.forumbg,
+.navbar,
+#nsbanner,
+.bg1,
+.bg2,
+.bg3,
+fieldset.jumpbox,
+#foot #toplink,
+#foot #toplink2,
+#footbar,
+#footbar:hover,
+#panel,
+#panel .panelcontent,
+#panel .menu a,
+#panel ul,
+.officerbar,
+rect,
+#chart-container,
+.highcharts-container {
     background: var(--background-color) !important;
 }
 
+#loggedin {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    padding-bottom: 2.5rem;
+}
+
+#foot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+#footbar {
+    margin: auto;
+}
+
 body,
-#content {
-  background: var(--background-color);
-  color: var(--text-color);
+#content,
+h1,
+h1 a,
+h2,
+h4,
+.pdescriptor,
+#page_activity .panelselector td.panelcat a,
+#panel,
+#panel .menu a,
+#panel ul,
+.officerbar,
+#panel ul.menu a,
+#banner .bel,
+#panel li i,
+#banner .bel .bellink i,
+#panel li i,
+#panel ul.popoutmenu li i,
+#panel ul.popoutmenu li a,
+.threads a,
+#trophyselectors i,
+.newrinfbubble .newmainlinebubblebottom,
+.newmyregionbubble .newmainlinebubblebottom,
+.newmainlinebubbletop,
+textarea,
+input[type="text"],
+input[type="search"],
+input[type="email"],
+#loginbox input,
+input[type="password"],
+table.settings input[type="text"],
+table.settings input[type="password"],
+input[name="report_hours"],
+input[name="region_name"],
+input[name="num_of_stamps"],
+select {
+    color: var(--text-color);
 }
 
 #main,
 #banner {
-  background: var(--background-color) none;
-}
-
-#panel,
-#panel .menu a,
-#panel ul,
-.officerbar {
-  background: var(--background-color) !important;
-  color: var(--text-color);
+    background: var(--background-color) none;
 }
 
 .newflagbox img,
 img.bigflag,
 img.smallflag,
-img.miniflag {
-  filter: none;
-}
-
+img.miniflag,
 #nationcover {
-  filter: none;
-}
-
-h1,
-h1 a,
-h2,
-h4 {
-  color: #edecee !important;
-  text-shadow: none;
+    filter: none;
 }
 
 a:link,
 a:visited,
-.dispatchbreadcrumbs a:link, .dispatchbreadcrumbs a:visited, fieldset.wfe .dispatchauthorline a:link, fieldset.wfe .dispatchauthorline a:visited, a.rlink {
-  color: var(--link-color);
-  text-decoration: none;
-  transition: color 0.25s ease-out;
+.dispatchbreadcrumbs a:link,
+.dispatchbreadcrumbs a:visited,
+fieldset.wfe .dispatchauthorline a:link,
+fieldset.wfe .dispatchauthorline a:visited,
+a.rlink {
+    color: var(--link-color);
 }
 
 .deckcard-season-1 {
     overflow: hidden;
 }
 
-.deckcard-season-1 .nameblock .ntype, .deckcard-season-1 .nameblock .nname,
+a:link,
+a:visited,
+.dispatchbreadcrumbs a:link,
+.dispatchbreadcrumbs a:visited,
+fieldset.wfe .dispatchauthorline a:link,
+fieldset.wfe .dispatchauthorline a:visited,
+a.rlink,
+.deckcard-season-1 .nameblock .ntype,
+.deckcard-season-1 .nameblock .nname,
 .deckcard-season-1 a:visited {
-  color: green !important;
-  text-decoration: none;
-  transition: color 0.25s ease-out;
+    text-decoration: none;
+    transition: color 0.25s ease-out;
+}
+
+.deckcard-season-1 .nameblock .ntype,
+.deckcard-season-1 .nameblock .nname,
+.deckcard-season-1 a:visited {
+    color: green !important;
 }
 
 a:link:hover,
 a:visited:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 #panel ul.menu a,
 #banner .bel,
 #panel li i,
-#banner .bel .bellink i {
-  color: var(--text-color);
-  text-shadow: none;
-}
-
+#banner .bel .bellink i,
 #panel li i,
-#panel ul.popoutmenu li i {
-  color: #bac2de;
-  text-shadow: none;
-}
-
-#panel ul.popoutmenu li a {
-  color: var(--text-color);
-  padding: 6px 0;
-}
-
-.threads a,
-#trophyselectors i {
-  color: #a6adc8 !important;
-}
-
+#panel ul.popoutmenu li i,
 .newrinfbubble .newmainlinebubblebottom,
 .newmyregionbubble .newmainlinebubblebottom,
-.newmainlinebubbletop {
-  color: var(--text-color);
-  text-shadow: none;
-}
-
+.newmainlinebubbletop,
 .newmainlinebubblebottom {
     text-shadow: none;
 }
 
+#panel ul.popoutmenu li a {
+    padding: 6px 0;
+}
+
 * {
-  font-family: var(--font-family) !important;
-  font-weight: 400;
-  font-style: normal;
+    font-family: var(--font-family) !important;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Keep the flag centered with the panel */
 .bannernation2 a.bellink {
-  padding: 0 22px !important;
+    padding: 0 22px !important;
 }
 
 /* Make the table background match the rest of the page */
@@ -138,33 +190,130 @@ a:visited:hover {
 .auctionstopdeckstable,
 .deckscollectionstable,
 #cardauctiontable {
-  background-color: var(--background-color);
+    background-color: var(--background-color);
 }
 
-#cardauctiontable td.auction-self-matched {
-  background-color: rgb(63 63 70) !important;
-}
-
-.cardauctionmatchedrow {
-  background-color: #313244 !important;
-}
-
-#cardauctiontable th {
-  background-color: #45475a !important;
+#cardauctiontable td.auction-self-matched,
+.entity_selector .ui-menu,
+.even {
+    background-color: var(--tertiary-background-color) !important;
 }
 
 .deckcard-filters .deckcard-token.selected {
     border: 3px solid #fff;
 }
 
-.even {
-    background: #45475a!important;
+table.settings h2 {
+    font-family: special elite, "courier 10 pitch", courier new, courier,
+    monospace, serif !important;
 }
 
-legend, fieldset, div.dispatchlist, .odd, ul.factbooklist, div.dispatch, .newrinfbubble .newmainlinebubblebottom, .newmyregionbubble .newmainlinebubblebottom, .newmainlinebubbletop, div.nationsummarybox, .policybox, .inner, .topic-actions {
-    background: #313244 !important;
+#page_settings table.settings div.clippedflagbox,
+table.settings img.paperclip {
+    display: block;
 }
 
-.signature {
-  border-color: #ccc;
+table.settings {
+    background-color: var(--secondary-background-color);
+}
+
+table.settings h2 {
+    font-size: 350% !important;
+    padding: 96px 0 0 22px !important;
+    min-height: 0px !important;
+    text-align: left !important;
+}
+
+textarea,
+input[type="text"],
+input[type="search"],
+input[type="email"],
+#loginbox input,
+input[type="password"],
+table.settings input[type="text"],
+table.settings input[type="password"],
+input[name="report_hours"],
+input[name="region_name"],
+input[name="num_of_stamps"],
+select {
+    border-radius: 0px !important;
+}
+
+#notices li,
+.minorinfo,
+.info,
+.minorinfo2,
+div.tgcontent,
+div.tgtopline,
+div.tgmsg,
+p#tgrecruitbox.is_recruiting,
+form[action="page=telegrams"] div.tgreply,
+table.tgsettings tr,
+table.subscriptions tr,
+table.tgsettings,
+table.subscriptions,
+table.panelselector,
+legend,
+fieldset,
+.odd,
+div.dispatch,
+.newrinfbubble .newmainlinebubblebottom,
+.newmyregionbubble .newmainlinebubblebottom,
+.newmainlinebubbletop,
+div.nationsummarybox,
+.inner,
+.topic-actions,
+fieldset.wfe,
+.embassypending,
+.embassycancel,
+.newsstory,
+div.product,
+div#giftbox.hide,
+#currency_dropdown,
+#cardauctiontable th,
+.cardauctionmatchedrow,
+#cardauctiontable td.auction-self-unmatched,
+textarea,
+input[type="text"],
+input[type="search"],
+input[type="email"],
+#loginbox input,
+input[type="password"],
+table.settings input[type="text"],
+table.settings input[type="password"],
+input[name="report_hours"],
+input[name="region_name"],
+input[name="num_of_stamps"],
+select {
+    background: var(--secondary-background-color) !important;
+}
+
+div.tg,
+div.tgcontent,
+div.tgtopline,
+div.tgmsg,
+p#tgrecruitbox.is_recruiting,
+form[action="page=telegrams"] div.tgreply {
+    border-color: var(--secondary-background-color) !important;
+}
+
+#faq_content,
+#faq_content h3,
+div.dispatchlist,
+ul.factbooklist,
+.policybox {
+    background: none !important;
+    border: none;
+    margin-right: 0px;
+}
+
+ul.factbooklist {
+    padding: 0px;
+}
+
+tspan,
+.highcharts-title,
+.highcharts-subtitle {
+    color: var(--text-color) !important;
+    fill: var(--text-color) !important;
 }
