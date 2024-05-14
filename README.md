@@ -8,6 +8,12 @@ The stylesheet is configurable with the css variables at the top. By default it 
 
 Changing the font can be done by altering the specified value in --font-family, but you may need to figure out how to import the font you want.
 
+## Legality
+
+>Your tool may freely customize everything that affects the look (but not the layout) of any NationStates page (including prohibited page items). This includes fonts, colors, margins, paddings, borders, and more. Note, however, that we don't make any assurances (beyond those explicitly listed in these rules) about the format and markup of any part of the site, and they can change at any time without any notice.
+
+This is just CSS, it doesn't change the behavior of anything. 
+
 ## Philosophy
 
 1. Higher contrast
