@@ -8,6 +8,7 @@
 6. Don't dim my flag or banner */
 :root {
     --background-color: #1e1e2e;
+/*     secondary needs to be darker than the main background color */
     --secondary-background-color: #181825;
     --tertiary-background-color: #11111b;
     --text-color: #cdd6f4;
