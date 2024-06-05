@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Dark Mod
 @namespace      github.com/Kractero
-@version        0.03
+@version        0.04
 @description    Modified rift dark style for nationstates
 @author         Kractero
 ==/UserStyle== */
@@ -15,10 +15,10 @@
         --text-color: #cdd6f4;
         --link-color: #94e2d5;
         --link-hover-color: #68c16f;
-        --font-family: "Noto Sans", sans-serif;
+        --font-family: "Noto Sans", helvetica neue, Verdana, Tahoma, sans-serif;
     }
 
-    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+    /* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"); */
 
     html,
     body,
@@ -327,12 +327,13 @@
     tspan,
     .highcharts-title,
     .highcharts-subtitle,
-    .highcharts-axis-labels span {
+    .highcharts-axis-labels span,
+    .highcharts-tooltip span {
         color: var(--text-color) !important;
         fill: var(--text-color) !important;
     }
     
-    .highcharts-tooltip > rect {
+    .highcharts-tooltip > rect, .highcharts-series rect {
         color: var(--tertiary-background-color) !important;
         fill: var(--tertiary-background-color) !important;
     }
