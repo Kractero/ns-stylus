@@ -8,14 +8,12 @@
 
 (function () {
     'use strict';
-
     const existingStylesheet = document.querySelector('link[href="/deck.dark_v1690092016.css"]');
     if (existingStylesheet) {
         const inlineStyles = `
             .deckcard-season-1 {
                 background-color: #fff;
             }
-
             .numberslug {
                 background-color: #2a2a2a;
             }
