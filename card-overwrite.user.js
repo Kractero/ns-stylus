@@ -10,7 +10,6 @@
     'use strict';
 
     const existingStylesheet = document.querySelector('link[href="/deck.dark_v1690092016.css"]');
-
     if (existingStylesheet) {
         const inlineStyles = `
             .deckcard-season-1 {
@@ -179,10 +178,8 @@
                 color: #999 !important;
             }
         `;
-
         const newStyle = document.createElement('style');
         newStyle.innerHTML = inlineStyles;
-
         existingStylesheet.parentNode.replaceChild(newStyle, existingStylesheet);
     }
 })();
