@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Dark Mod
 @namespace      github.com/Kractero
-@version        0.04
+@version        0.05
 @description    Modified rift dark style for nationstates
 @author         Kractero
 ==/UserStyle== */
@@ -45,7 +45,8 @@
     #chart-container,
     .highcharts-container,
     #createdby,
-    #paneltitle {
+    #paneltitle,
+    #page_api_doc #doccontent {
         background: var(--background-color) !important;
     }
 
@@ -133,7 +134,7 @@
     fieldset.wfe .dispatchauthorline a:link,
     fieldset.wfe .dispatchauthorline a:visited,
     a.rlink {
-        color: var(--link-color);
+        color: var(--link-color) !important;
     }
 
     .deckcard-season-1 {
@@ -297,7 +298,9 @@
     input[name="report_hours"],
     input[name="region_name"],
     input[name="num_of_stamps"],
-    select {
+    select,
+    #page_api_doc .api,
+    .notablebox {
         background: var(--secondary-background-color) !important;
     }
 
